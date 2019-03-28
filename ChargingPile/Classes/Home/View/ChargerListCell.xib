@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="ChargerListCell">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电桩名称:会展城充电桩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-vo-950">
+                        <rect key="frame" x="120" y="15" width="147" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电桩地址:会展城充电桩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knL-ms-qye">
+                        <rect key="frame" x="293.5" y="108" width="126.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="电桩图" translatesAutoresizingMaskIntoConstraints="NO" id="cGS-Pm-DhW">
+                        <rect key="frame" x="10" y="10" width="100" height="110.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="xYz-EK-D8b"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电桩地址:会展城充电桩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks0-iK-F1x">
+                        <rect key="frame" x="120" y="96" width="168" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cGS-Pm-DhW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="44C-Ad-v5X"/>
+                    <constraint firstItem="hcm-vo-950" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5ck-a3-4Pv"/>
+                    <constraint firstAttribute="trailing" secondItem="knL-ms-qye" secondAttribute="trailing" constant="5" id="JGH-xV-0aU"/>
+                    <constraint firstAttribute="bottom" secondItem="ks0-iK-F1x" secondAttribute="bottom" constant="15" id="Kto-xu-xmg"/>
+                    <constraint firstAttribute="bottom" secondItem="knL-ms-qye" secondAttribute="bottom" constant="8" id="fhU-pb-JQT"/>
+                    <constraint firstItem="cGS-Pm-DhW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="flr-ba-W0O"/>
+                    <constraint firstAttribute="bottom" secondItem="cGS-Pm-DhW" secondAttribute="bottom" constant="10" id="rsC-cK-UkO"/>
+                    <constraint firstItem="ks0-iK-F1x" firstAttribute="leading" secondItem="cGS-Pm-DhW" secondAttribute="trailing" constant="10" id="s87-we-XNF"/>
+                    <constraint firstItem="hcm-vo-950" firstAttribute="leading" secondItem="cGS-Pm-DhW" secondAttribute="trailing" constant="10" id="wJ5-QW-Rqc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="ks0-iK-F1x" id="6dE-Rz-RH9"/>
+                <outlet property="name" destination="hcm-vo-950" id="cm1-3H-QrR"/>
+                <outlet property="phoneNum" destination="knL-ms-qye" id="Y7d-35-89X"/>
+            </connections>
+            <point key="canvasLocation" x="-324" y="204.64767616191907"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="电桩图" width="366" height="367"/>
+    </resources>
+</document>

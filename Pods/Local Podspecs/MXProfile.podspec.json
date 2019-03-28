@@ -1,0 +1,22 @@
+{
+  "name": "MXProfile",
+  "version": "0.1.0",
+  "summary": "A short description of MXProfile.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MuXingX/MXProfile",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MuXingX": "670148403@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/MuXingX/MXProfile.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MXProfile/Classes/**/*"
+}
